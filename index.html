@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Questionnaire : Marques Alimentaires et Bijouterie</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire : Marques Alimentaires et Bijouterie</h1>
+        <p>Nous sommes des étudiants travaillant sur l’influence de l’ancienneté des marques alimentaires et de bijouterie sur leur crédibilité.</p>
+
+        <form action="https://formspree.io/f/{your-id}" method="POST">
+            <label for="nom">Nom (facultatif) :</label>
+            <input type="text" id="nom" name="nom">
+
+            <label for="prenom">Prénom (facultatif) :</label>
+            <input type="text" id="prenom" name="prenom">
+
+            <label for="age">Âge (*) :</label>
+            <input type="number" id="age" name="age" required>
+
+            <h2>Marques Alimentaires</h2>
+            <p>Parmi ces marques alimentaires, lesquelles connaissez-vous ?</p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="marques-alimentaires" value="Kinder">Kinder</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Lay's">Lay's</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Milka">Milka</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Haribo">Haribo</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Heinz">Heinz</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Maggi">Maggi</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Lindt">Lindt</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Pringles">Pringles</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="La Laitère">La Laitère</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="LU">LU</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Bonne Maman">Bonne Maman</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Carte d’or">Carte d’or</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="St Michel">St Michel</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Magnum">Magnum</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Amora">Amora</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Président">Président</label>
+                <label><input type="checkbox" name="marques-alimentaires" value="Barilla">Barilla</label>
+            </div>
+
+            <h2>Marques de Bijouterie</h2>
+            <p>Parmi ces marques de bijoux, lesquelles connaissez-vous ?</p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="marques-bijoux" value="Bulgari">Bulgari</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Cartier">Cartier</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Tiffany & Co">Tiffany & Co</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Chanel">Chanel</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Chopard">Chopard</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Piaget">Piaget</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Chaumet">Chaumet</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Pandora">Pandora</label>
+                <label><input type="checkbox" name="marques-bijoux" value="Histoire d’Or">Histoire d’Or</label>
+            </div>
+
+            <h2>Crédibilité des Marques</h2>
+            <p>Donnez une note sur 10 pour la crédibilité des marques suivantes :</p>
+
+            <!-- Ajout des marques alimentaires -->
+            <label for="kinder-credibilite">Kinder :</label>
+            <input type="number" id="kinder-credibilite" name="kinder-credibilite" min="1" max="10">
+            <label for="lays-credibilite">Lay's :</label>
+            <input type="number" id="lays-credibilite" name="lays-credibilite" min="1" max="10">
+            <label for="milka-credibilite">Milka :</label>
+            <input type="number" id="milka-credibilite" name="milka-credibilite" min="1" max="10">
+            <label for="haribo-credibilite">Haribo :</label>
+            <input type="number" id="haribo-credibilite" name="haribo-credibilite" min="1" max="10">
+            <label for="heinz-credibilite">Heinz :</label>
+            <input type="number" id="heinz-credibilite" name="heinz-credibilite" min="1" max="10">
+            <label for="maggi-credibilite">Maggi :</label>
+            <input type="number" id="maggi-credibilite" name="maggi-credibilite" min="1" max="10">
+            <label for="lindt-credibilite">Lindt :</label>
+            <input type="number" id="lindt-credibilite" name="lindt-credibilite" min="1" max="10">
+            <label for="pringles-credibilite">Pringles :</label>
+            <input type="number" id="pringles-credibilite" name="pringles-credibilite" min="1" max="10">
+            <label for="laitere-credibilite">La Laitère :</label>
+            <input type="number" id="laitere-credibilite" name="laitere-credibilite" min="1" max="10">
+            <label for="lu-credibilite">LU :</label>
+            <input type="number" id="lu-credibilite" name="lu-credibilite" min="1" max="10">
+            <label for="bonne-maman-credibilite">Bonne Maman :</label>
+            <input type="number" id="bonne-maman-credibilite" name="bonne-maman-credibilite" min="1" max="10">
+            <label for="carte-dor-credibilite">Carte d’or :</label>
+            <input type="number" id="carte-dor-credibilite" name="carte-dor-credibilite" min="1" max="10">
+            <label for="st-michel-credibilite">St Michel :</label>
+            <input type="number" id="st-michel-credibilite" name="st-michel-credibilite" min="1" max="10">
+            <label for="magnum-credibilite">Magnum :</label>
+            <input type="number" id="magnum-credibilite" name="magnum-credibilite" min="1" max="10">
+            <label for="amora-credibilite">Amora :</label>
+            <input type="number" id="amora-credibilite" name="amora-credibilite" min="1" max="10">
+            <label for="president-credibilite">Président :</label>
+            <input type="number" id="president-credibilite" name="president-credibilite" min="1" max="10">
+            <label for="barilla-credibilite">Barilla :</label>
+            <input type="number" id="barilla-credibilite" name="barilla-credibilite" min="1" max="10">
+
+            <!-- Ajout des marques de bijouterie -->
+            <label for="bulgari-credibilite">Bulgari :</label>
+            <input type="number" id="bulgari-credibilite" name="bulgari-credibilite" min="1" max="10">
+            <label for="cartier-credibilite">Cartier :</label>
+            <input type="number" id="cartier-credibilite" name="cartier-credibilite" min="1" max="10">
+            <label for="tiffany-credibilite">Tiffany & Co :</label>
+            <input type="number" id="tiffany-credibilite" name="tiffany-credibilite" min="1" max="10">
+            <label for="chanel-credibilite">Chanel :</label>
+            <input type="number" id="chanel-credibilite" name="chanel-credibilite" min="1" max="10">
+            <label for="chopard-credibilite">Chopard :</label>
+            <input type="number" id="chopard-credibilite" name="chopard-credibilite" min="1" max="10">
+            <label for="piaget-credibilite">Piaget :</label>
+            <input type="number" id="piaget-credibilite" name="piaget-credibilite" min="1" max="10">
+            <label for="chaumet-credibilite">Chaumet :</label>
+            <input type="number" id="chaumet-credibilite" name="chaumet-credibilite" min="1" max="10">
+            <label for="pandora-credibilite">Pandora :</label>
+            <input type="number" id="pandora-credibilite" name="pandora-credibilite" min="1" max="10">
+            <label for="histoire-dor-credibilite">Histoire d’Or :</label>
+            <input type="number" id="histoire-dor-credibilite" name="histoire-dor-credibilite" min="1" max="10">
+
+            <h2>Date Approximate de Création</h2>
+            <p>Pour vous donner une approximation de la date de création de ces marques, veuillez indiquer une estimation :</p>
+
+            <label for="kinder-date">Kinder :</label>
+            <input type="text" id="kinder-date" name="kinder-date">
+            <label for="lays-date">Lay's :</label>
+            <input type="text" id="lays-date" name="lays-date">
+            <label for="milka-date">Milka :</label>
+            <input type="text" id="milka-date" name="milka-date">
+            <label for="haribo-date">Haribo :</label>
+            <input type="text" id="haribo-date" name="haribo-date">
+            <label for="heinz-date">Heinz :</label>
+            <input type="text" id="heinz-date" name="heinz-date">
+            <label for="maggi-date">Maggi :</label>
+            <input type="text" id="maggi-date" name="maggi-date">
+            <label for="lindt-date">Lindt :</label>
+            <input type="text" id="lindt-date" name="lindt-date">
+            <label for="pringles-date">Pringles :</label>
+            <input type="text" id="pringles-date" name="pringles-date">
+            <label for="laitere-date">La Laitère :</label>
+            <input type="text" id="laitere-date" name="laitere-date">
+            <label for="lu-date">LU :</label>
+            <input type="text" id="lu-date" name="lu-date">
+            <label for="bonne-maman-date">Bonne Maman :</label>
+            <input type="text" id="bonne-maman-date" name="bonne-maman-date">
+            <label for="carte-dor-date">Carte d’or :</label>
+            <input type="text" id="carte-dor-date" name="carte-dor-date">
+            <label for="st-michel-date">St Michel :</label>
+            <input type="text" id="st-michel-date" name="st-michel-date">
+            <label for="magnum-date">Magnum :</label>
+            <input type="text" id="magnum-date" name="magnum-date">
+            <label for="amora-date">Amora :</label>
+            <input type="text" id="amora-date" name="amora-date">
+            <label for="president-date">Président :</label>
+            <input type="text" id="president-date" name="president-date">
+            <label for="barilla-date">Barilla :</label>
+            <input type="text" id="barilla-date" name="barilla-date">
+
+            <!-- Ajout des marques de bijouterie -->
+            <label for="bulgari-date">Bulgari :</label>
+            <input type="text" id="bulgari-date" name="bulgari-date">
+            <label for="cartier-date">Cartier :</label>
+            <input type="text" id="cartier-date" name="cartier-date">
+            <label for="tiffany-date">Tiffany & Co :</label>
+            <input type="text" id="tiffany-date" name="tiffany-date">
+            <label for="chanel-date">Chanel :</label>
+            <input type="text" id="chanel-date" name="chanel-date">
+            <label for="chopard-date">Chopard :</label>
+            <input type="text" id="chopard-date" name="chopard-date">
+            <label for="piaget-date">Piaget :</label>
+            <input type="text" id="piaget-date" name="piaget-date">
+            <label for="chaumet-date">Chaumet :</label>
+            <input type="text" id="chaumet-date" name="chaumet-date">
+            <label for="pandora-date">Pandora :</label>
+            <input type="text" id="pandora-date" name="pandora-date">
+            <label for="histoire-dor-date">Histoire d’Or :</label>
+            <input type="text" id="histoire-dor-date" name="histoire-dor-date">
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
